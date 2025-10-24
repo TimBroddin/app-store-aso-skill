@@ -5,6 +5,7 @@ A comprehensive Claude Code skill for generating optimized Apple App Store metad
 Pairs well with:
 
 - [Astro MCP Server](https://github.com/TimBroddin/astro-mcp-server)
+- [App Store MCP](https://github.com/dimohamdy/mcp-appstore)
 
 ## 🎯 What This Skill Does
 
