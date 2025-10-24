@@ -2,6 +2,10 @@
 
 A comprehensive Claude Code skill for generating optimized Apple App Store metadata with ASO (App Store Optimization) best practices, competitive analysis, and automated validation.
 
+Pairs well with:
+
+- [Astro MCP Server](https://github.com/TimBroddin/astro-mcp-server)
+
 ## 🎯 What This Skill Does
 
 This skill transforms Claude Code into an ASO expert that can:
@@ -193,7 +197,7 @@ MIT License - see LICENSE file for details
 
 ## 🙏 Acknowledgments
 
-Built using the [Claude Code Skill Creator](https://github.com/anthropics/claude-code) framework.
+Built using the [Claude Skill Creator](https://github.com/anthropics/skills/tree/main/skill-creator).
 
 ASO knowledge compiled from industry research, official Apple documentation, and analysis from leading ASO platforms.
 
