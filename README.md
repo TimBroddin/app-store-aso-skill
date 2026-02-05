@@ -47,14 +47,13 @@ Python script validates all metadata against Apple's strict character limits wit
 
 ## 🚀 Installation
 
-### Option 1: Direct Install (Recommended)
+### Option 1: Skills CLI (Recommended)
 
-1. Download the latest release `.zip` file
-2. Extract to your Claude Code skills directory:
-   ```bash
-   unzip app-store-aso.zip -d ~/.claude/skills/
-   ```
-3. Restart Claude Code (if currently running)
+```bash
+npx skills add timbroddin/app-store-aso-skill
+```
+
+This will install the skill and make it available to Claude Code automatically.
 
 ### Option 2: Git Clone
 
@@ -62,6 +61,15 @@ Python script validates all metadata against Apple's strict character limits wit
 cd ~/.claude/skills/
 git clone https://github.com/timbroddin/app-store-aso-skill.git app-store-aso
 ```
+
+### Option 3: Manual Install
+
+1. Download the latest release `.zip` file
+2. Extract to your Claude Code skills directory:
+   ```bash
+   unzip app-store-aso.zip -d ~/.claude/skills/
+   ```
+3. Restart Claude Code (if currently running)
 
 ### Verify Installation
 
