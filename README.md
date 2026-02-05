@@ -4,8 +4,9 @@ A comprehensive Claude Code skill for generating optimized Apple App Store metad
 
 Pairs well with:
 
-- [Astro MCP Server](https://github.com/TimBroddin/astro-mcp-server)
+- [Astro MCP Server](https://github.com/TimBroddin/astro-mcp-server) - Full-featured MCP server for comprehensive ASO analytics and keyword research
 - [App Store MCP](https://github.com/dimohamdy/mcp-appstore)
+- [Krankie](https://github.com/timbroddin/krankie) - Lightweight, agent-first CLI for tracking App Store keyword rankings. No MCP setup required—just install with `bun install -g krankie` and run. Stores ranking history locally in SQLite, perfect for monitoring keyword positions over time and measuring the impact of your ASO changes. This skill includes instructions for using Krankie to establish baselines, track competitors, and measure optimization results.
 
 ## 🎯 What This Skill Does
 

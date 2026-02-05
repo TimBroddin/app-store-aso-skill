@@ -100,6 +100,95 @@ Structure recommendations as:
 ### ✅ Validation Results
 [Output from validation script showing compliance]
 
+## Krankie: App Store Ranking Tracker
+
+Krankie is an agent-first CLI tool for tracking App Store keyword rankings. Use it to monitor keyword performance, track ranking changes over time, and inform ASO optimization decisions with real data.
+
+### Installation
+
+```bash
+bun install -g krankie
+# or run directly
+bunx krankie
+```
+
+### Key Commands
+
+**App Management:**
+```bash
+# Search for apps
+krankie app search "<query>" --platform ios
+
+# Add an app to track
+krankie app create <app_id> --platform ios
+
+# List tracked apps
+krankie app list
+```
+
+**Keyword Tracking:**
+```bash
+# Add keywords to track for an app
+krankie keyword add <app_id> "<keyword>" --store us
+
+# List tracked keywords
+krankie keyword list
+```
+
+**Ranking Checks:**
+```bash
+# Run ranking checks for all tracked keywords
+krankie check run
+
+# View current rankings
+krankie rankings
+
+# See biggest movers (gains/losses)
+krankie rankings movers
+
+# View ranking history for a keyword
+krankie rankings history <keyword_id>
+
+# Check status of last run
+krankie check status
+```
+
+**Automation:**
+```bash
+# Install daily cron job (default: 6 AM)
+krankie cron install --hour 6
+
+# Check cron status
+krankie cron status
+```
+
+### Agent Integration
+
+All commands support `--json` flag for structured output:
+```bash
+krankie rankings --json
+krankie app list --json
+```
+
+Get agent-friendly instructions:
+```bash
+krankie instructions --format json
+```
+
+### Data Notes
+
+- Rankings track positions 1-200; null indicates outside this range
+- Data stored locally in `~/.krankie/krankie.db` (SQLite)
+- Daily re-checks are rate-limited; use `--force` to override
+- Logs available at `~/.krankie/check.log`
+
+### ASO Workflow Integration
+
+1. **Before optimization**: Use `krankie rankings` to establish baseline keyword positions
+2. **Competitive analysis**: Track competitor apps and their keyword rankings
+3. **After metadata changes**: Monitor `krankie rankings movers` to measure impact
+4. **Trend analysis**: Use `krankie rankings history` to identify patterns
+
 ## Resources
 
 ### scripts/validate_metadata.py
