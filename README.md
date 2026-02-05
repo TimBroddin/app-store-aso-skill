@@ -54,7 +54,7 @@ Python script validates all metadata against Apple's strict character limits wit
 npx skills add timbroddin/app-store-aso-skill
 ```
 
-This will install the skill and make it available to Claude Code automatically.
+This will install the skill and make it available to your agent automatically.
 
 ### Option 2: Git Clone
 
